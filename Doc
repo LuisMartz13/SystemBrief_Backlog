@@ -1,1 +1,40 @@
+# System Brief – RouteSmart
 
+## Visión
+
+Optimizar las rutas de entrega para reducir costos,
+tiempo de transporte y mejorar eficiencia logística.
+
+## Problema
+
+Las empresas pequeñas gestionan rutas manualmente,
+lo que genera retrasos y mayores costos.
+
+## Stakeholders
+
+- Administrador logístico
+- Repartidores
+- Clientes finales
+
+## Scope
+
+- Registro de paquetes
+- Cálculo de ruta óptima
+- Visualización en mapa
+- Actualización de estado
+
+## No Scope
+
+- Integración con pagos
+- App móvil nativa
+- GPS en tiempo real
+
+---
+
+## Diagrama de Contexto
+
+```mermaid
+graph TD
+    Admin[Administrador] -->|Registra paquetes| RouteSmart
+    Repartidor -->|Consulta ruta| RouteSmart
+    RouteSmart -->|Estado de entrega| Cliente
